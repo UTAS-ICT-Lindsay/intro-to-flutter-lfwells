@@ -1,0 +1,4 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "bash -c 'set -e && sudo apt-get update && sudo apt-get install -y git curl unzip && git clone https://github.com/flutter/flutter.git --depth 1 --branch stable ~/flutter && echo '\\''export PATH=\"$HOME/flutter/bin:$PATH\"'\\'' >> ~/.bashrc && export PATH=\"$HOME/flutter/bin:$PATH\" && flutter config --no-analytics && flutter precache && echo \"✅ Minimal Flutter setup complete!\"'"
+}
