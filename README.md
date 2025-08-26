@@ -7,7 +7,7 @@ You can do this workshop and use the code in this repository outside of a codesp
 
 ## Step 1. Open the Codespace
 Use the link below, it will create a virtual codespace for you to work in in the cloud.
-
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lfwells/intro_to_flutter?template=false)
 It might take a few minutes to load up, but once done, you'll be working inside an online VSCode instance.
 
 ## Step 2. Run Flutter Web
