@@ -6,7 +6,7 @@ The virtual environment means you don't install anything on your computer, but h
 You can do this workshop and use the code in this repository outside of a codespace if you like, just skip to **Working with this outside of a Codespace** below.
 
 ## Step 1. Open the Codespace
-Click on **<Code>** then **Codespaces** then **Create Codespace on main**.
+Click on **Code** then **Codespaces** then **Create Codespace on main**.
 It might take a few minutes to load up, but once done, you'll be working inside an online VSCode instance.
 
 ## Step 2. Run Flutter Web
