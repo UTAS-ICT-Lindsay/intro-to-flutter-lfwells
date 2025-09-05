@@ -1,4 +1,25 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "bash -c 'set -e && sudo apt-get update && sudo apt-get install -y git curl unzip && git clone https://github.com/flutter/flutter.git --depth 1 --branch stable ~/flutter && echo '\\''export PATH=\"$HOME/flutter/bin:$PATH\"'\\'' >> ~/.bashrc && export PATH=\"$HOME/flutter/bin:$PATH\" && flutter config --no-analytics && flutter precache && echo \"✅ Minimal Flutter setup complete!\"'"
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "no-auth": true
+    }
+  },
+  "forwardPorts": [6080],
+  "postCreateCommand": "sudo flutter config --no-analytics && sudo flutter config --enable-web && sudo flutter precache --web",
+  "postStartCommand": "(sleep 5 && code WORKSHOP.md) &",
+  // "postAttachCommand" has been removed.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.dart-code",
+        "Dart-Code.flutter"
+      ],
+      "settings": {
+        "dart.flutterHotReloadOnSave": "all"
+      }
+    }
+  }
 }
