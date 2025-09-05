@@ -1,7 +1,7 @@
 # Start from the base image
 FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
-# Install dependencies, including GTK, then clean up
+# Install dependencies, including git-lfs, then clean up
 RUN sudo apt-get -o Acquire::ForceIPv4=true update && \
     sudo apt-get install -y --no-install-recommends \
     -o Acquire::ForceIPv4=true \
@@ -14,6 +14,7 @@ RUN sudo apt-get -o Acquire::ForceIPv4=true update && \
     clang \
     pkg-config \
     libgtk-3-dev \
+    git-lfs \
     && sudo rm -rf /var/lib/apt/lists/*
 
 # Clone Flutter
