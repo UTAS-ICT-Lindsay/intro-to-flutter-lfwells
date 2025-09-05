@@ -23,5 +23,10 @@ RUN git clone https://github.com/flutter/flutter.git --depth 1 --branch stable /
 # Set up the PATH for all users
 ENV PATH="/opt/flutter/bin:${PATH}"
 
+# Pre-cache Flutter SDK artifacts directly into the image
+RUN flutter precache --web --linux
+
+RUN flutter pub get
+
 # Change ownership of the flutter directory to the 'vscode' user
 RUN sudo chown -R vscode /opt/flutter
