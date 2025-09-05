@@ -8,9 +8,9 @@
     }
   },
   "forwardPorts": [6080],
-  "postCreateCommand": "sudo flutter config --no-analytics && sudo flutter config --enable-web && sudo flutter precache --web",
+ // "postCreateCommand": "sudo flutter config --no-analytics && sudo flutter config --enable-web && sudo flutter precache --web",
   "postStartCommand": "(sleep 5 && code WORKSHOP.md) &",
-  // "postAttachCommand" has been removed.
+  "postAttachCommand": "(sleep 5 && code WORKSHOP.md) &",
   "customizations": {
     "vscode": {
       "extensions": [
