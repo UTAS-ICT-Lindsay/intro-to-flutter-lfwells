@@ -12,12 +12,9 @@ RUN sudo apt-get -o Acquire::ForceIPv4=true update && \
 RUN git clone https://github.com/flutter/flutter.git --depth 1 --branch stable /opt/flutter
 ENV PATH="/opt/flutter/bin:${PATH}"
 
-# --- MODIFICATION START ---
 # Configure Flutter and precache artifacts directly into the image
 RUN flutter config --no-analytics && \
-    flutter config --enable-linux && \
     flutter precache --linux
-# --- MODIFICATION END ---
 
 # Change ownership of the flutter directory to the 'vscode' user
 RUN sudo chown -R vscode /opt/flutter
