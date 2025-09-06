@@ -8,7 +8,7 @@ Use the link below, it will create a virtual codespace for you to work in in the
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/UTAS-ICT-Lindsay/ict-flutter-workshop-intro-to-flutter-intro_to_flutter?template=false)
 
-Wait for everything to load up, you'll see some tabs for Flutter appear down the side, and the words `Linux (linux-x64)` should appear in the bottom corner instead of `No Device`.
+Wait for everything to load up, you'll see some tabs for Flutter appear down the side, and the words `Web-Server` or `Linux (linux-x64)` should appear in the bottom corner instead of `No Device`.
 
 ## Step 2. Getting Started
 1. Follow the detailed workshop instructions in [WORKSHOP.md](WORKSHOP.md).
