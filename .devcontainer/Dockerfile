@@ -20,10 +20,14 @@ USER vscode
 # Set the working directory to where your project will live
 WORKDIR /workspaces/intro_to_flutter
 
-# Copy pubspec files and run flutter pub get to pre-install dependencies
-# This is cached, so it only re-runs if pubspec.yaml changes.
-COPY --chown=vscode pubspec.yaml .
+# --- MODIFICATION START ---
+# Copy pubspec from the parent directory (the project root)
+COPY --chown=vscode ../pubspec.yaml .
+# --- MODIFICATION END ---
+
 RUN flutter pub get
 
-# Copy the rest of the application code
-COPY --chown=vscode . .
+# --- MODIFICATION START ---
+# Copy the entire project (the parent directory) into the workdir
+COPY --chown=vscode .. .
+# --- MODIFICATION END ---
