@@ -1,6 +1,7 @@
 {
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {
@@ -8,9 +9,8 @@
     }
   },
   "forwardPorts": [6080],
- // "postCreateCommand": "sudo flutter config --no-analytics && sudo flutter config --enable-web && sudo flutter precache --web",
+  "postCreateCommand": "sudo flutter config --no-analytics && sudo flutter config --enable-web",
   "postStartCommand": "(sleep 5 && code WORKSHOP.md) &",
-  "postAttachCommand": "(sleep 5 && code WORKSHOP.md) &",
   "customizations": {
     "vscode": {
       "extensions": [
