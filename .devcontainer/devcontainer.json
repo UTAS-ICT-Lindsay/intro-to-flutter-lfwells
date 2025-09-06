@@ -10,6 +10,7 @@
   },
   "forwardPorts": [6080],
   "postStartCommand": "(sleep 5 && code WORKSHOP.md) &",
+  "postAttachCommand": "flutter pub get && code WORKSHOP.md",
   "customizations": {
     "vscode": {
       "extensions": [
