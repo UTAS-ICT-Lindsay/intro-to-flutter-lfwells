@@ -17,7 +17,7 @@
         "Dart-Code.flutter"
       ],
       "settings": {
-        "dart.flutterHotReloadOnSave": "all",
+        "dart.hotReloadOnSave": "all",
         "workbench.colorTheme": "Default Dark+"
       }
     }

@@ -1,31 +1,39 @@
 # Getting Started with Flutter
 This repository gives you a playground for trying out Flutter. It is set up to install Flutter in a virtual environment.
-The virtual environment means you don't install anything on your computer, but has some limitations:
-- We can only use Flutter Web (but the code you write can be put on Android/iOS/Windows/MacOS/Linux later)
-- We don't get Hot Reload or Hot Restart (you need to refresh the page after every change)
+The virtual environment means you don't install anything on your computer. We're technically making a Flutter *Linux* build, and viewing it over a remove *VNC* connection, but that's just so that we can play with Flutter immediately.
 You can do this workshop and use the code in this repository outside of a codespace if you like, just skip to **Working with this outside of a Codespace** below.
 
 ## Step 1. Open the Codespace
 Use the link below, it will create a virtual codespace for you to work in in the cloud.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lfwells/intro_to_flutter?template=false)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/UTAS-ICT-Lindsay/ict-flutter-workshop-intro-to-flutter-intro_to_flutter?template=false)
 
-It might take a few minutes to load up, but once done, you'll be working inside an online VSCode instance.
+Wait for everything to load up, you'll see some tabs for Flutter appear down the side.
 
-## Step 2. Run Flutter Web
-In the Terminal in VSCode, run the following command:
-```sh
-flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0
-```
-When prompted, click "Open in Browser", or navigate to the "Ports" tab and open the URL listed for port "8080".
+## Step 2. Build the App
+1. Open the **Run and Debug** Tab in VSCode ![Run and Debug Tab](.workshop_images/build_and_debug.png)
+2. Click the **Green Run Arrow** ![Green Arrow](.workshop_images/green_arrow.png)
+
+## Step 3. Open the VNC Viewer
+1. Open the **Ports** Tab (you may need to open the bottom panel with this button in the top-right: ![Bottom Panel](.workshop_images/bottom_panel.png))
+2. Find the item in the list for `6080`
+![Ports Tab](.workshop_images/ports_tab.png)
+3. Right-click this item and choose **Open in Browser**.
+4. In the browser tab that appears, click **Connect**.
+![Connect](.workshop_images/connect_vnc.png)
+
+Your app should be visible.
+
+![Flutter Sample](.workshop_images/flutter_sample.png)
 
 ## Step 3. Participate in the Workshop
-and become a Flutter Master!
+1. Follow the detailed workshop instructions in [WORKSHOP.md](WORKSHOP.md).
+2. Become a Flutter Master!
 
-## Step 4. Save your work
-Push your changes to your repository to save them for the future, using the Source Control tab in VSCode.
+# Saving your work
+The easiest way to do this is to **Right-Click anywhere in the File Explorer List** (on the empty space, not on a specific file or folder), and choose **Download**.
 
-# Working with this code outside of a Codespace (VSCode on your computer)
+# Working with this code outside of a Codespace
 - Clone to repository to your computer (e.g. using Github Desktop, command line, etc.)
 - Follow the [Quick Setup Guide on the Flutter Website](https://docs.flutter.dev/get-started/quick) for VSCode (or use Android Studio)
 - Open the cloned repository in VSCode

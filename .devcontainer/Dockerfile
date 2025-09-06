@@ -5,7 +5,11 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu
 RUN sudo apt-get -o Acquire::ForceIPv4=true update && \
     sudo apt-get install -y --no-install-recommends \
     -o Acquire::ForceIPv4=true \
-    git curl unzip cmake ninja-build build-essential clang pkg-config libgtk-3-dev git-lfs \
+    software-properties-common \
+    && sudo add-apt-repository universe && \
+    sudo apt-get install -y --no-install-recommends \
+    -o Acquire::ForceIPv4=true \
+    git curl unzip cmake ninja-build build-essential clang pkg-config libgtk-3-dev git-lfs fonts-roboto \
     && sudo rm -rf /var/lib/apt/lists/*
 
 # Clone Flutter SDK
