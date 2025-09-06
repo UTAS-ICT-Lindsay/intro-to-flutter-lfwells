@@ -8,10 +8,18 @@ RUN sudo apt-get -o Acquire::ForceIPv4=true update && \
     git curl unzip cmake ninja-build build-essential clang pkg-config libgtk-3-dev git-lfs \
     && sudo rm -rf /var/lib/apt/lists/*
 
-# Clone and configure Flutter SDK
+# Clone Flutter SDK
 RUN git clone https://github.com/flutter/flutter.git --depth 1 --branch stable /opt/flutter
 ENV PATH="/opt/flutter/bin:${PATH}"
-RUN flutter precache --web --linux
+
+# --- MODIFICATION START ---
+# Configure Flutter and precache artifacts directly into the image
+RUN flutter config --no-analytics && \
+    flutter config --enable-linux && \
+    flutter precache --linux
+# --- MODIFICATION END ---
+
+# Change ownership of the flutter directory to the 'vscode' user
 RUN sudo chown -R vscode /opt/flutter
 
 # Switch to the non-root 'vscode' user

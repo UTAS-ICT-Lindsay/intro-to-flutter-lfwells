@@ -9,7 +9,6 @@
     }
   },
   "forwardPorts": [6080],
-  "postCreateCommand": "sudo flutter config --no-analytics && sudo flutter config --enable-web",
   "postStartCommand": "(sleep 5 && code WORKSHOP.md) &",
   "customizations": {
     "vscode": {
