@@ -4,10 +4,11 @@ Try to keep this tab open in VSCode, to work through the content. If you lose th
 You may like to dock this tab to the right by right-clicking the tab, and choosing **Split Right**.
 
 ## Getting Started
-1. Wait until you can see the words `Linux (linux-x64)` in the **Bottom-Right Corner** (instead of `No Device`).
+1. Wait until you can see the words `Web-Server` or `Linux (linux-x64)` in the **Bottom-Right Corner** (instead of `No Device`).
 2. Open the **Run and Debug** Tab in VSCode ![Run and Debug Tab](.workshop_images/build_and_debug.png)
 3. Click the **Green Run Arrow** 
     - You may get a message saying the project has errors. Press **Run Anyway**
+    - In the popup, choose **Linux (linux-x64)**
     - The build should only take about a minute the first time
     
 ![Green Arrow](.workshop_images/green_arrow.png)
