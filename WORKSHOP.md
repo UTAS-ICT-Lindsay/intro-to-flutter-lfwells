@@ -4,15 +4,22 @@ Try to keep this tab open in VSCode, to work through the content. If you lose th
 You may like to dock this tab to the right by right-clicking the tab, and choosing **Split Right**.
 
 ## Getting Started
-This repository gives you a playground for trying out Flutter. 
+1. Wait until you can see the words `Linux (linux-x64)` in the **Bottom-Right Corner** (instead of `No Device`).
+2. Open the **Run and Debug** Tab in VSCode ![Run and Debug Tab](.workshop_images/build_and_debug.png)
+3. Click the **Green Run Arrow** 
+    - You may get a message saying the project has errors. Press **Run Anyway**
+    - The build should only take about a minute the first time
+    
+![Green Arrow](.workshop_images/green_arrow.png)
 
-1. Open the **Run and Debug** Tab in VSCode ![Run and Debug Tab](.workshop_images/build_and_debug.png)
-2. Click the **Green Run Arrow** ![Green Arrow](.workshop_images/green_arrow.png)
-3. Open the **Ports** Tab (you may need to open the bottom panel with this button in the top-right: ![Bottom Panel](.workshop_images/bottom_panel.png))
-4. Find the item in the list for `6080`
+4. Open the **Ports** Tab (you may need to open the bottom panel with this button in the top-right: ![Bottom Panel](.workshop_images/bottom_panel.png))
+5. Find the item in the list for `6080`
+
 ![Ports Tab](.workshop_images/ports_tab.png)
-5. Right-click this item and choose **Open in Browser**.
-6. In the browser tab that appears, click **Connect**.
+
+6. Right-click this item and choose **Open in Browser**.
+7. In the browser tab that appears, click **Connect**.
+
 ![Connect](.workshop_images/connect_vnc.png)
 
 Your app should be visible.
