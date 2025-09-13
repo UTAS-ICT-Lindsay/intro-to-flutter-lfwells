@@ -6,7 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '2 - Flutter Widgets',
+      title: '2 - Making Widgets',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
@@ -20,12 +20,12 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
- return Scaffold(
+   return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("Flutter Widgets"),
       ),
-      body: Text("Hello World")
-  );
+      body: Text("Hello, Flutter!"),
+   );
   }
 }
