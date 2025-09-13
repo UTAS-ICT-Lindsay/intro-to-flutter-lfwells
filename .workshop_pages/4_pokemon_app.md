@@ -38,4 +38,6 @@ We're going to explore and improve this sample application. It uses the [PokéAP
 - extra bonus: detect game over
 - extra bonus: add PP
 
+# ⏩ Next [What to Learn Next](/.workshop_pages/5_next_steps.md)
+
 - [🏠 Back to Workshop Home](/WORKSHOP.md)
