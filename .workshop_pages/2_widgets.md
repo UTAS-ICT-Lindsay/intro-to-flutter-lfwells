@@ -111,6 +111,6 @@ class MyEpicTextBox extends StatelessWidget {
  MyEpicTextBox(color: Theme.of(context).colorScheme.primary),
 ```
 
-# ⏩ Next [State and Interactivity](/.workshop_pages/3_state.md)
+# ⏩ Next: [State and Interactivity](/.workshop_pages/3_state.md)
 
 [🏠 Back to Workshop Home](/WORKSHOP.md)

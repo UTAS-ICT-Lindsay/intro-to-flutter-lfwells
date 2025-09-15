@@ -172,8 +172,8 @@ class PokemonListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder(
       future: Api.getPokemonImage(pokemon),
-      builder: (context, snapshot) {
-        var imageUrl = snapshot.data;
+      builder: (context, asyncSnapshot) {
+        var imageUrl = asyncSnapshot.data;
         return ListTile(
           leading: imageUrl == null ? CircularProgressIndicator() : Image.network(imageUrl),
           title: Text(pokemon.name.capitalize(), style: TextStyle(fontWeight: FontWeight.bold),),

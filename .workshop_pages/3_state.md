@@ -94,6 +94,6 @@ Padding(
 ```
 3. Notice that UI reloads, but your state (votes) have remained.
 
-# ⏩ Next [A Full Sample App](/.workshop_pages/4_pokemon_app.md)
+# ⏩ Next: [A Full Sample App](/.workshop_pages/4_pokemon_app.md)
 
 [🏠 Back to Workshop Home](/WORKSHOP.md)
