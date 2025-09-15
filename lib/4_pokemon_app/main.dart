@@ -71,6 +71,20 @@ class _HomePageState extends State<HomePage>
       )
     );
   }
+
+  Padding buildBattleInfo() {
+    if (pokemon1 != null && pokemon2 != null) {
+      return Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text("${pokemon1!.name.capitalize()} vs ${pokemon2!.name.capitalize()}", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+      );
+    } else {
+      return Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text("Select two Pokémon to battle!", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+      );
+    }
+  }
 }
 
 
