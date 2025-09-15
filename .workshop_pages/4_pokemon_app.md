@@ -11,6 +11,11 @@ We're going to explore and improve this sample application. It uses the [PokéAP
 to retrieve data about different Pokémon and their moves. We're going to add some interactivity to it, 
 in the form of a highly simplified "battle" between two Pokémon.
 
+- [Task 1: Adding Images to the List](#task-1-adding-images-to-the-list)
+- [Task 2: Selecting Pokémon to Battle](#task-2-selecting-pokémon-to-battle)
+- [Task 3: Navigating with a Battle Button and Tidying the Code](#task-3-navigating-with-a-battle-button-and-tidying-the-code)
+- [Task 4: Improving the Battle Page](#task-4-improving-the-battle-page)
+
 ![Pokemon App](/.workshop_images/pokemon_start.png)
 
 ## Exploring the Code
